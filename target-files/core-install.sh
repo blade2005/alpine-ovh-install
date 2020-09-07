@@ -5,7 +5,7 @@ cat alpine-answers.template | envsubst > alpine-answers
 source alpine-answers
 
 setup-keymap $KEYMAPOPTS
-setup-hostname $HOSTNAMEOPTS
+setup-hostname $hostname
 setup-dns $DNSOPTS
 setup-timezone $TIMEZONEOPTS
 setup-apkrepos $APKREPOSOPTS
