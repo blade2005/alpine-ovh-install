@@ -6,6 +6,7 @@ adduser stoney -D
 addgroup stoney wheel
 ./add-ssh-key.sh root
 ./add-ssh-key.sh stoney
+./bootloader.sh
 
 echo "$hostname.$domain" > /etc/hostname
 
