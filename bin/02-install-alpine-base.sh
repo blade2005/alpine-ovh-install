@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 notify "Installing Alpine Linux with setup-alpine"
 
 notify "Preparing pristine alpine env"
