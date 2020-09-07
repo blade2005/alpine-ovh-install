@@ -1,0 +1,31 @@
+KEYMAPOPTS="us us"
+HOSTNAMEOPTS="-n $hostname"
+INTERFACESOPTS="auto lo
+iface lo inet loopback
+auto eth0
+iface eth0 inet static
+  address $ip_address
+  netmask 255.255.255.255
+  broadcast $ip_address
+  post-up route add $gateway dev eth0
+  post-up route add default gw $gateway
+  post-down route del default gw $gateway
+  post-down route del $gateway dev eth0
+"
+DNSOPTS="1.1.1.1"
+TIMEZONEOPTS="-z America/Chicago"
+APKREPOSOPTS="-1"
+SSHDOPTS="-c openssh"
+NTPOPTS="-c openntpd"
+
+BOOT_SIZE=512
+SWAP_SIZE=0
+ROOTFS=ext4
+BOOTFS=ext2
+SYSROOT=/target
+BOOTLOADER=grub
+DISKLABEL=gpt
+APKCACHEOPTS="/var/cache/apk"
+DEFAULT_DISK=/dev/sda
+DISKOPTS="-m sys -L -k lts -r /dev/sda /dev/sdb"
+
