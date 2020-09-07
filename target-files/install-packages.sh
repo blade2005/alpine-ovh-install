@@ -9,7 +9,7 @@ apk add build-base cmake extra-cmake-modules  gcc
 echo "[-] Install extras"
 apk add e2fsprogs abuild gptfdisk libvirt-daemon
 echo "[-] Install System Utils"
-apk add lvm2 mdadm pciutils qemu-system-x86_64 sgdisk shadow usbutils
+apk add lvm2 mdadm pciutils qemu-system-x86_64 sgdisk shadow usbutils \
 utmps
 echo "[-] Install Doc Utils"
 apk add man-db man-pages mandoc  mandoc-apropos bash-doc binutils-doc \
