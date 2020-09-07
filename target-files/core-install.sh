@@ -9,8 +9,8 @@ setup-hostname $hostname
 setup-dns $DNSOPTS
 setup-timezone $TIMEZONEOPTS
 setup-apkrepos $APKREPOSOPTS
-setup-sshd $SSHDOPTS
-setup-ntp $NTPOPTS
+setup-sshd $SSHDOPTS || echo Configured SSHD already
+setup-ntp $NTPOPTS || echo Configured NTP already
 cat << INTERFACES > /etc/network/interfaces
 auto lo
 iface lo inet loopback
