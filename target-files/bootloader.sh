@@ -1,4 +1,5 @@
 #!/bin/sh -e
+source alpine-answers
 apk add syslinux
 dd bs=440 count=1 if=/usr/share/syslinux/mbr.bin of=$DEFAULT_DISK
 extlinux -i /boot
