@@ -5,8 +5,8 @@ source install.env
 ./core-install.sh
 adduser stoney -D || echo User stoney exists
 addgroup stoney wheel
-./add-ssh-key.sh root
-./add-ssh-key.sh stoney
+#./add-ssh-key.sh root
+#./add-ssh-key.sh stoney
 ./bootloader.sh
 
 echo "$hostname.$domain" > /etc/hostname
