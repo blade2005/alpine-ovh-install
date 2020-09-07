@@ -1,6 +1,6 @@
 #!/bin/bash -e
 source install.env utils.sh
-cp -r target-files $chroot_dir
+rsync -ap target-files/ $chroot_dir/
 cp utils.sh install.env $chroot_dir
 
 chroot $chroot_dir /install.sh
