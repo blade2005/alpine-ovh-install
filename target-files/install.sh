@@ -1,8 +1,8 @@
 #!/bin/sh -e
 source utils.sh
 source install.env
-./core-install.sh
 ./install-packages.sh
+./core-install.sh
 adduser stoney -D
 addgroup stoney wheel
 ./add-ssh-key.sh root

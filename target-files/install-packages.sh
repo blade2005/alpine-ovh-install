@@ -1,7 +1,8 @@
 #!/bin/sh -e
 echo "[-] Install basic utils"
 apk add bash bash-completion nano binutils coreutils curl dialog attr \
-file findutils grep less lsof readline sed util-linux python3 vim ruby
+file findutils grep less lsof readline sed util-linux python3 vim ruby \
+gettext
 echo "[-] Install bootloader/kernel"
 apk add grub grub-bios linux-lts
 echo "[-] Install compiler"
