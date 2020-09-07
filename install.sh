@@ -1,4 +1,5 @@
 #!/bin/sh -e
+source install.env utils.sh
 bin/01-prepare-disks.sh
 bin/02-install-alpine-base.sh
 

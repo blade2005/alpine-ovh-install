@@ -1,6 +1,4 @@
 #!/bin/sh -e
-source utils.sh
-source install.env
 
 cp -r target-files $chroot_dir
 cp utils.sh install.env $chroot_dir

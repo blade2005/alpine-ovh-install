@@ -1,7 +1,4 @@
 #!/bin/sh -e
-source utils.sh
-source install.env
-
 notify "Installing Alpine Linux with setup-alpine"
 
 notify "Preparing pristine alpine env"
