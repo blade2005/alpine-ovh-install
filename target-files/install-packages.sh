@@ -12,7 +12,7 @@ echo "[-] Install System Utils"
 apk add lvm2 mdadm pciutils qemu-system-x86_64 sgdisk shadow usbutils \
 utmps
 echo "[-] Install Doc Utils"
-apk add man-db man-pages mandoc  mandoc-apropos bash-doc binutils-doc \
+apk add man-db man-pages bash-doc binutils-doc \
 coreutils-doc curl-doc dialog-doc grep-doc less-doc lsof-doc gcc-doc \
 extra-cmake-modules-doc cmake-doc nano-doc util-linux-doc
 
