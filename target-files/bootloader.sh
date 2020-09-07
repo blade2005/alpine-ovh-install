@@ -7,3 +7,5 @@ root=UUID=$(blkid ${DEFAULT_DISK}1 | cut -d\" -f2)
 sed -i -e "s:^root=.*:root=$root:" /etc/update-extlinux.conf
 sed -i -e "s:^modules=.*:modules=sd-mod,usb-storage,ext4:" /etc/update-extlinux.conf
 update-extlinux
+echo "$root / ext4 rw,relatime,data=ordered 0 0" > /etc/fstab
+mkinitfs $(ls /lib/modules)
